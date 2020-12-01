@@ -9,139 +9,60 @@ input[type ="text" ]
 }
 ::placeholder
 {
-   color: white;
+   text-align: center;
+   color:  rgba(34, 215, 247, 0.911);
+   font-family: 'Times New Roman', Times, serif;
 }
 
-    
+.field
+{
+   border-color: yellow;
+   color:lightblue;
+}
    
 
 .containerregister
 {
-   display: block;
+ 
   background-image: url(./b566af8bab8557bafb92a77717ab70f7.gif);
   background-size: 100% 100%;
   min-width: 100%;
   min-height:100%;
   background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: fixed;
-  box-shadow: 0 4px 8px 0 rgba(247, 244, 106, 0.795), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.ui.card{
-   
-   display: flex;
-   font-family: 'Times New Roman', Times, serif;
-   margin-top: 20%;
-   padding-left: 50px;
-   padding-bottom: 20px;
-   height: 110%;
-   padding-top:30px;
-   width:27%;
-   margin-left: 10%;
-   padding-right: 50px;
-   color: yellow;
-   background: #03001e;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   box-shadow: 0 4px 8px 0 rgba(248, 235, 122, 0.911), 0 6px 20px 0 rgba(25, 197, 20, 0.89);
-   
-}
-.red
-{
-   font-family: 'Times New Roman', Times, serif;
-   color: red;
-}
-.h
-{
-   padding:20px;
-   font-size: 30px;
-   color:rgb(38, 0, 255);
-   margin: 10px;
-   justify-content: left;
-   align-content: center;
-   margin-left: 5px;
-}
 
- ui.card{
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(247, 244, 106, 0.795), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+ }
+
+.card1
+{
+  
    
-   
-   font-family: 'Times New Roman', Times, serif;
-   margin-top: 20%;
-   padding-left: 50px;
+   text-align: center;
+   min-width: 345;
+   border-radius:10px;
+   padding-top: 30px;
+   padding-right:10px;
    padding-bottom: 20px;
-   height: 110%;
-   padding-top:30px;
-   width:27%;
-   margin-left: 10%;
-   padding-right: 50px;
-   color: yellow;
-   background: #03001e;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   box-shadow: 0px 4px 8px 0 rgba(248, 235, 122, 0.911), 0 6px 20px 0 rgba(25, 197, 20, 0.89);
-   
-}
-.containerF
-{
-   width:100%;
-   height: 100%;
-   position: fixed;
-   display:flex;
-   justify-content: center;
-   align-items: center;
+   margin: 2%;
+   width:450px;
+   position: relative;
    font-family: 'Times New Roman', Times, serif;
-   font-size: 16px;
-}
-.container1
-{
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   color:  rgba(34, 215, 247, 0.911);
+   background: -webkit-linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e);  
+   background: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e); 
+   box-shadow: 0 4px 8px 0 rgba(248, 235, 122, 0.911), 0 6px 20px 0 rgba(25, 197, 20, 0.89);
+      
   
 }
-
-.sign_in
+.white
 {
-   background: url(./01d7b90c605b626c0162e1f05fce6eea.gif);
-   background-size: cover;
-   text-transform: uppercase;
-   -webkit-text-fill-color: transparent;
-   -webkit-background-clip: text;
-   -moz-background-clip:text;
-   background-clip:text; 
-   font-family:'Times New Roman', Times, serif;
-   font-size:10em;
-   position: fixed;
-   padding:100px;
-   text-align:center;
-   -webkit-text-stroke: 3px transparent;
-
-}
-.s
-{
-   color:yellow;
-   -webkit-text-fill-color: transparent;
    font-family: 'Times New Roman', Times, serif;
-   font-size:40px;
-   font-weight:bold;
-   margin-top:0px;
-   margin-bottom:1px;
-   -webkit-text-stroke: 1px yellow;
+   color: white;
 }
-.third_format
-{
-   color:white;
-   font-family:"Georgia";
-   font-size:30px;
-   font-weight:bold;
-   margin-top:0px;
-   margin-bottom:1px;
-} 
+
 .button
 {
    border: none;
@@ -176,20 +97,3 @@ input[type ="text" ]
     border: 2px solid rgb(15, 6, 48);
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
-
-.assassin
-{
-   display: block;
-   position: absolute;
-   /* background-image: url(./14164.gif); */
-   background-repeat: no-repeat;
-   right:500px;
-   left:800px;
-   width: 500px;
-   height: 500px;
-   bottom:1000px;
-  
-
-}
-
-

@@ -1,7 +1,8 @@
 import React  from 'react';
 import ReactDOM from 'react-dom';
 import './Login.css'
-import Welcome from './Welcome'
+import axios from 'axios'
+
 import {BrowserRouter as Router , Route , Link} from 'react-router-dom'
 
 
@@ -20,7 +21,7 @@ class MyForm extends React.Component {
     handleChange (event)
     {
       let input = this.state.input;
-      input[event.target.value]=event.target.value;
+      input[event.target.name]=event.target.value;
       this.setState
       (
         {
@@ -37,6 +38,16 @@ class MyForm extends React.Component {
     if(this.validate())
     {
       console.log(this.state);
+      
+      const newLogin = 
+      {
+        email1:this.state.input.email1,
+        password1:this.state.input.password1,
+        check:this.state.input.check
+      }
+
+      axios.post('http://localhost:4000/gamestore/add',newLogin)
+          .then(res=>console.log(res.data));
       let input = {};
     
       input["email1"] = "";
@@ -44,7 +55,7 @@ class MyForm extends React.Component {
       input["check"]="";
       
       this.setState({input:input});
-      alert("Login successful");
+      console.log("Login successful",this.state.input);
     }
   }
   
@@ -59,15 +70,7 @@ class MyForm extends React.Component {
       isValid = false;
       errors["email1"] = "Please enter your email address."
     }
-    if (typeof input["email1"] !== "undefined") 
-    {       
-        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-        if (!pattern.test(input["email1"])) 
-        {
-          isValid = false;
-          errors["email1"] = "Please enter valid email address.";
-        }
-    }
+ 
     if(!input["password1"])
     {
       isValid = false;
@@ -98,14 +101,13 @@ class MyForm extends React.Component {
        
         <div className = "background" >
        
-      <div className="ui card">
-        <div className="content">
+        <div className="card">
            <form className="Form" onSubmit={this.handleSubmit}>
         
            <br/>
-           <div className="ui search">
+          
             <label for="email1" className="style">Please enter your email address:</label>
-            <br/>
+          
             <input 
               type="email" 
               name="email1" 
@@ -115,9 +117,9 @@ class MyForm extends React.Component {
               placeholder="Enter your email" 
               id="email1" />        
               <div className="red">{this.state.errors.email1}</div>
-              </div>
+             
 
-            <div className="ui search"> 
+              
             <label for="password1" className="style"><br/>Please enter your password:</label>
             <input 
               type="password" 
@@ -129,30 +131,33 @@ class MyForm extends React.Component {
               id="password1" />
               <div className="red">{this.state.errors.password1}</div>
 
-            </div>
-            <div className="space"> <br/></div>
-            
-            <div className="ui search"> 
-            <label for="check" className="style"></label>
+          
+            <br/>
+           
+            <label for="check" className="style">
+            <div>
             <input 
               type="checkbox" 
               name="check" 
-              value={this.state.input.check}
+              value="Remember"
+              checked={this.state.input.check==="Remember"}
               onChange={this.handleChange}
               className="check"
               id="check" />
               Remember Me
               <input className="reset" type="reset" value="Reset"/>
-             <input className="submit" type="submit" value="Done"/>
-             
+             <input className="submit" type="submit"  value="Done"/>
+             </div></label>
             <Router>
+              <div>
               <Link to ='/'><div className="forgot">Forgot Password</div></Link>
+              </div>
             </Router>
-            </div>
+           
            
         </form>
         </div>
-        </div>
+       
         </div>
       );
     }

@@ -23,13 +23,12 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: fixed;
- 
-  
 
 }
 
 .reset
-{
+{   
+   
     background-color: rgba(34, 215, 247, 0.911);
     margin-left:68px;
     margin-bottom: 10px;;
@@ -39,6 +38,7 @@
 }
 .submit
 {
+    
     background-color: rgba(34, 215, 247, 0.911);
     margin-left:20px;
     align-content: center;
@@ -47,12 +47,13 @@
 
 .input
 {
-    
+    border-color: rgba(34, 215, 247, 0.911); ;
     text-align: center;
     color: rgba(34, 215, 247, 0.911);
     background-color: black;
     width:300px;
     height:30px
+    
     
  }
  ::placeholder
@@ -64,28 +65,28 @@
  }
 .style
 {   
+   
     font-size: 15px;
     color: rgba(34, 215, 247, 0.911);
     font-family: 'Times New Roman', Times, serif;
 }
 
-.ui.card
-{
-    display: flex;
-   font-family: 'Times New Roman', Times, serif;
-   top:250px;
-   
-  
-   height: 110%;
-   padding-top:10px;
-   width:27%;
-   margin-left: 35%;
-   padding-right: 50px;
-   color: rgba(34, 215, 247, 0.911);
-   background: #000428; 
-   background: -webkit-linear-gradient(to right, #004e92, #000428); 
-   background: linear-gradient(to right, #004e92, #000428);
-    
-   box-shadow: 2px 0px 0px 2px rgba(34, 215, 247, 0.911), -2px 0px 0px 2px rgba(48, 162, 255,0.922);
-   
-} 
+.card {
+
+    position: relative;
+    top:220px;
+    left:30%;
+    text-align: center;
+    min-width: 345;
+    border-radius:10px;
+    padding-top: 30px;
+    padding-right:10px;
+    padding-bottom: 20px;
+    margin: 2%;
+    width:450px;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    box-shadow: 2px 0px 0px 2px rgba(34, 215, 247, 0.911), -2px 0px 0px 2px rgba(48, 162, 255,0.922);
+
+
+}
