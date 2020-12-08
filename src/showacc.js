@@ -22,14 +22,14 @@ const Register = props =>(
  class Show extends React.Component {
     
     constructor(props)
-    {
+    {   
         super(props);
         this.state={input:[]}
 
     }
    componentDidMount()
     {
-        axios.get('http://localhost:4000/gamestore/')
+        axios.get('http://localhost:4000/users/')
         .then(response=>
         {
              this.setState({input:response.data}); 
@@ -94,5 +94,5 @@ const Register = props =>(
         
     }
 }
-ReactDOM.render(<Show />, document.getElementById('root'));
+ReactDOM.render(<Show/>, document.getElementById('root'));
 export default Show;

@@ -1,0 +1,77 @@
+
+.hpbackground
+{
+	margin-top:-6%;
+	padding: 2px;
+	background:url(./see.jpg);
+	position:relative;
+	background-size:cover;
+	border: 2px solid blue;
+	background-position: left;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	justify-content: right;
+}
+.float-child.m {
+	width: 65%;
+    float: right;
+    padding: 20px;
+    background:transparent;
+	text-transform: uppercase;
+	position:relative;
+	background-size:cover;
+	background-position: right;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	justify-content: right;
+} 
+.float-child.m:hover
+{
+	background-color:transparent;
+	color:rgb(255,0,0);
+	border: 2px solid rgb(0,0,0);
+	box-shadow: -1px 5px 6px 4px rgba(64, 227, 208, 0.6);
+} 
+.hpButton
+{
+
+
+	height: 40px;
+	padding:0px;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	width:80px;
+	font-family:"Georgia";
+	margin-right:200px;
+	margin-left:20px;
+	margin-bottom:10px;
+	cursor: pointer;
+	transition-duration:0.4s;
+	align-self: center;
+	background-color:black;
+	color:rgb(201, 214, 83);
+	border: 1px solid rgb(0,0,0);
+	border-radius:7%;
+
+
+}
+
+
+.hpButton:hover
+{
+	background-color:black;
+	color:rgb(255,0,0);
+	border: 2px solid rgb(0,0,0);
+	box-shadow: -1px 5px 6px  rgba(255,0,0, 0.6);
+}
+.headers
+{
+	
+	color: purple;
+	border-radius:50px;
+	
+}
+ 

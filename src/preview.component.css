@@ -1,0 +1,246 @@
+.elementslist {
+  background-color: #0e0e0e;
+  color: white;
+
+}
+
+.elementsList {
+  /* background-color: #0e0e0e; */
+  padding: 20px 80px 20px 40px;
+}
+
+.topSellers {
+  background: url(./back.png);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+  text-align:center;
+}
+
+
+.upcoming {
+  background: url(./upc.jpeg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+  text-align:center;
+}
+.specials {
+  background: url(./spe.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+ text-align:center;
+}
+.virtualReality {
+  background: url(./vr.webp);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+} 
+.controllerFriendly {
+  background: url(./con1.png);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.freetoPlay {
+  background: url(./free.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.earlyAccess {
+  background: url(./ear.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.action {
+  background: url(./act.png);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.adventure {
+  background: url(./adv.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.casual {
+  background: url(./cas.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.indie {
+  background: url(./ind.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.massivelyMultiplayer {
+  background: url(./mas.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.racing {
+  background: url(./rac.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.rpg {
+  background: url(./reg.png);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.simulation {
+  background: url(./sim.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.sports {
+  background: url(./spo.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+.strategy {
+  background: url(./stra.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: red;
+  padding: 5%;
+  font-size: 30px;
+text-align:center;
+}
+
+
+h2 {
+  font-family:"Georgia";
+  text-align: center;
+  font-size: 50px;
+  border-color: hotpink;
+  background-attachment: fixed;
+  
+}
+
+.box_element {
+  background-color: grey;
+  border-radius: 50px;
+  box-shadow: 5px 10px 2px rgb(213,236,32);
+  margin: 5px 20px 5px 20px;
+  padding: 50px 10px 10px 50px;
+}
+
+.platforms {
+  padding-top: 20px;
+}
+.platform {
+
+  margin-left: 10px;
+  width: 15px;
+}
+
+

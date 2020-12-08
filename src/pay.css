@@ -1,0 +1,78 @@
+.paymentBackground {
+    background:url(./pay.png);
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.paymentImage {
+    background-image: url(./pay.jpeg);
+    height: 250px;
+    right: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.card2
+{
+	
+    text-align: center;
+    min-width: 300;
+    border-radius: 10px;
+    border: 3px solid rgb(0,0,0);
+    border-color: transparent;
+    padding-top: 2px;
+    padding-right: 1px;
+    padding-bottom: 2px;
+    margin: 2%;
+    margin-left: 35%;
+    width: 350px;
+    position: relative;
+    font-family: 'Algerian','Libre Baskerville';
+    color: rgba(34, 215, 247, 0.911);
+    background-color:transparent;
+    border-radius:20px;
+}
+.style{
+	
+	color:black;
+	font-size: 18px;
+}
+.input{
+	color: rgba(202, 225, 247, 0.911);
+}
+.pdone{
+	border: none;
+	color: yellow;
+	height: 40px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	justify-content: center;
+	width: 75px;
+	text-align: center;
+	text-decoration: underline overline;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Times";
+	margin: 1px 1px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	align-self: center;
+	background-color: white;
+	border-radius: 10px;
+	color: rgb(0,36,143);
+	border: 3px solid rgb(255,255,255);
+	box-shadow: 0 6px 6px rgba(0, 255, 255, 0.6);
+}
+.pdone:hover
+{
+	background-color: black;
+	color: rgb(255, 0, 4);
+	border: 3px solid rgb(0,0,0);
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}

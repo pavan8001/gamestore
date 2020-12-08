@@ -1,99 +1,102 @@
-
-input[type ="text" ]
-{
-   color: lightblue;
-   background-color: black;
-   width:300px;
-   height:30px
-
-}
-::placeholder
-{
-   text-align: center;
-   color:  rgba(34, 215, 247, 0.911);
-   font-family: 'Times New Roman', Times, serif;
+input[type="text"] {
+    color: lightblue;
+    background-color: black;
+    width: 200px;
+    height: 30px
 }
 
-.field
-{
-   border-color: yellow;
-   color:lightblue;
+::placeholder {
+    text-align: center;
+    color: rgba(34, 215, 247, 0.911);
+    font-family: 'Times New Roman', Times, serif;
 }
-   
 
-.containerregister
-{
- 
-  background-image: url(./b566af8bab8557bafb92a77717ab70f7.gif);
+.field {
+    border-color: yellow;
+    color: lightblue;
+    font-size: 15px;
+}
+
+.rgcontainerregister {
+  background:url(./hihi.gif) no-repeat scroll 0% 0%;
+  background-color: black   ;
   background-size: 100% 100%;
   min-width: 100%;
   min-height:100%;
-  background-position: center;
-
+  background-position: left;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(247, 244, 106, 0.795), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
- }
+  position: fixed;
+    
 
-.card1
-{
-  
-   
-   text-align: center;
-   min-width: 345;
-   border-radius:10px;
-   padding-top: 30px;
-   padding-right:10px;
-   padding-bottom: 20px;
-   margin: 2%;
-   width:450px;
-   position: relative;
-   font-family: 'Times New Roman', Times, serif;
-   color:  rgba(34, 215, 247, 0.911);
-   background: -webkit-linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e);  
-   background: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e); 
-   box-shadow: 0 4px 8px 0 rgba(248, 235, 122, 0.911), 0 6px 20px 0 rgba(25, 197, 20, 0.89);
-      
-  
-}
-.white
-{
-   font-family: 'Times New Roman', Times, serif;
-   color: white;
+    
 }
 
-.button
-{
-   border: none;
-   color:yellow;
-   height: 200 px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   justify-content: center;
-   width: 300px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 30px;
-   font-weight:bold;
-   font-family:"Times New Roman";
-   margin: 1px 1px;
-   cursor: pointer;
-   transition-duration:0.4s;
-   align-self: center;
-}
-.button1
-{
-   background-color:transparent;
-   color: yellow;
-   border: 2px solid rgb(236, 78, 16);
-   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-}
-.button1:hover
-{
+.card1 {
+    text-align: center;
+    min-width: 300;
+    border-radius: 10px;
+    border: 3px solid rgb(0,0,0);
+    border-color: transparent;
+    padding-top: 2px;
+    padding-right: 1px;
+    padding-bottom: 2px;
+    margin: 2%;
+    margin-left: 75%;
+    width: 350px;
+    position: relative;
+    font-family: 'Algerian','Libre Baskerville';
+    color: rgba(34, 215, 247, 0.911);
     background-color:transparent;
-    color:rgb(240, 117, 80);
-    border: 2px solid rgb(15, 6, 48);
+    
+
+}
+
+.login {
+    background-color:black;
+    font-size: 20px;
+    color: rgba(34, 215, 247, 0.911);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.white {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.rgbutton {
+    border: none;
+    color: yellow;
+    height: 40px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    justify-content: center;
+    width: 75px;
+    text-align: center;
+    text-decoration: underline overline;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Times";
+    margin: 1px 1px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    align-self: center;
+}
+
+.button1 {
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(0,36,143);
+    border: 3px solid rgb(255,255,255);
+    box-shadow: 0 6px 6px rgba(0, 255, 255, 0.6);
+}
+
+.button1:hover {
+    background-color: black;
+    color: rgb(255, 0, 4);
+    border: 3px solid rgb(0,0,0);
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
+
+

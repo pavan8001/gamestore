@@ -1,0 +1,119 @@
+.indcontent {
+  background: url(./back2.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position:relative;
+  color: #f0f0f0;
+  
+}
+
+.title {
+  color: orange;
+  font-size: 50px;
+  font-variant: small-caps;
+  text-align: center;
+  text-shadow: 3px 2px 3px black;
+}
+
+.video {
+   color: hotpink;
+  font-size: 50px;
+  font-variant: small-caps;
+  text-align: center;
+  text-shadow: 3px 2px 3px black;
+  margin-left: 5%;
+  padding: 30px;
+}
+
+.thumbnails {
+  padding-left: 10%;
+}
+
+.image {
+  margin: 1% 5% 5% 1%;
+  width: 5%;
+}
+
+.price {
+  font-family: serif;
+  font-size: 2em;
+  margin-left: 20%;
+}
+
+.img {
+  margin-left: 1em;
+  width: 4%;
+}
+.platforms {
+  margin: 0 10% 10em 10%;
+  font-size: 150%;
+  position: absolute;
+}
+
+.platform {
+  margin-left: 10px;
+  position: absolute;
+  width: 2px;
+}
+
+
+.about {
+  font-size: 25px;
+  font-family:"Georgia";
+  color: white;
+  padding: 0 2% 0 2%;
+  border-radius: 5px;
+  margin: 5em 10px 10px 10px;
+  border-style: dashed;
+   border-radius: 10px;
+}
+
+.sys {
+  font-size: 25px;
+  font-family:"Georgia";
+  color: rgba(64, 224, 208, 0.911);
+  padding: 1em 5% 0 5%;
+  border-radius: 5px;
+  margin: 5em 10px 0 10px;
+  border-style: dashed;
+  height: 60em;
+   border-radius: 10px;
+}
+.poster{
+  border-radius: 5px;
+  border-color: black;
+  border-width:4px;
+}
+.Buttun{
+	border: none;
+	color: yellow;
+	height: 50px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	justify-content: center;
+	
+	text-align: center;
+	text-decoration: underline overline;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Times";
+	margin: 1px 1px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	align-self: center;
+	background-color: white;
+	border-radius: 10px;
+	color: rgb(0,36,143);
+	border: 3px solid rgb(255,255,255);
+	box-shadow: 0 6px 6px rgba(0, 255, 255, 0.6);
+}
+.Buttun:hover
+{
+	background-color: black;
+	color: rgb(255, 0, 4);
+	border: 3px solid rgb(0,0,0);
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}	

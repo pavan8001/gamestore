@@ -1,91 +1,70 @@
 import React  from 'react';
-import ReactDOM from 'react-dom';
 import './Login.css'
 import axios from 'axios'
-
-import {BrowserRouter as Router , Route , Link} from 'react-router-dom'
 
 
 class MyForm extends React.Component {
    
-    constructor() {
-      super();
+    constructor(props) {
+      super(props);
       this.state = 
       { 
-        input: {},
+        email:"",
+        password:"",
+        
         errors: {}
       }
-      this.handleChange = this.handleChange.bind(this);
+    
       this.handleSubmit = this.handleSubmit.bind(this);
     }
-    handleChange (event)
-    {
-      let input = this.state.input;
-      input[event.target.name]=event.target.value;
-      this.setState
-      (
-        {
-           input
-        }
-      );
-    }
-
+  
+    
    handleSubmit(event)
     {
-        event.preventDefault();
+    event.preventDefault();
     
+    let x=document.forms["myForm"]["email"].value
+    let y=document.forms["myForm"]["password"].value
 
     if(this.validate())
     {
-      console.log(this.state);
-      
-      const newLogin = 
-      {
-        email1:this.state.input.email1,
-        password1:this.state.input.password1,
-        check:this.state.input.check
-      }
-
-      axios.post('http://localhost:4000/gamestore/add',newLogin)
-          .then(res=>console.log(res.data));
-      let input = {};
-    
-      input["email1"] = "";
-      input["password1"] = "";
-      input["check"]="";
-      
-      this.setState({input:input});
-      console.log("Login successful",this.state.input);
+      axios.get(`http://localhost:4000/users/find?email=${x}&password=${y}`)
+      .then(()=> 
+       {  
+       alert("Successful login!")
+       this.letin();
+          }
+      )
+      .catch(err =>{
+          alert('invalid credentials')
+          console.log(err)
+      })
     }
   }
   
   validate()
   {
-    let input = this.state.input;
+    let x=document.forms["myForm"]["email"].value
+    let y=document.forms["myForm"]["password"].value
     let errors = {};
     let isValid = true;
    
-    if(!input["email1"])
+
+    if(!x)
     {
       isValid = false;
-      errors["email1"] = "Please enter your email address."
+      errors["email"] = "Please enter your email address."
     }
- 
-    if(!input["password1"])
+    
+  
+    
+    if(!y)
     {
       isValid = false;
-      errors["password1"] = "Please enter the password."
+      errors["password"] = "Please enter the password."
     }
 
-    if(typeof input["password1"] !== "undefined")
-    {
-      var pattern = new RegExp(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s)(?=.*[!@#$*])/);
-      if(!pattern.test(input["password1"]))
-      {
-        isValid = false;
-        errors["password1"] = "Please use an UpperCase character , number , special character in you password. "
-      }
-    }
+  
   
   this.setState(
     {
@@ -95,73 +74,75 @@ class MyForm extends React.Component {
   return isValid;
   }
 
-  
+  letin()
+  {
+    this.props.history.push("/payment");
+  }
+  forgot()
+  {
+    return true;
+  }
     render() {
       return (
+      
+        <div className = "lgbackground" >
        
-        <div className = "background" >
-       
-        <div className="card">
-           <form className="Form" onSubmit={this.handleSubmit}>
+      <div className="ui card">
+        <div className="content">
+           <form className="myForm" name="myForm" action="./homepage"  onSubmit={this.handleSubmit} method="POST">
         
            <br/>
-          
-            <label for="email1" className="style">Please enter your email address:</label>
-          
+           <div className="ui search">
+            <label for="email" className="style"><b>Please enter your email address:</b></label>
+            <br/>
             <input 
               type="email" 
-              name="email1" 
-              value={this.state.input.email1}
-              onChange={this.handleChange}
+              name="email" 
+             
+             
               className="input"
               placeholder="Enter your email" 
-              id="email1" />        
-              <div className="red">{this.state.errors.email1}</div>
-             
+              id="email" />        
+              <div className="red">{this.state.errors.email}</div>
+           </div>
 
-              
-            <label for="password1" className="style"><br/>Please enter your password:</label>
+            <div className="ui search"> 
+            <label for="password" className="style"><br/><b>Please enter your password:</b></label>
             <input 
               type="password" 
-              name="password1" 
-              value={this.state.input.password1}
-              onChange={this.handleChange}
+              name="password" 
+              
+          
               className="input"
               placeholder="Enter the password!" 
-              id="password1" />
+              id="password" />
               <div className="red">{this.state.errors.password1}</div>
 
-          
-            <br/>
-           
-            <label for="check" className="style">
-            <div>
+            </div>
+            <div className="space"> <br/></div>
+            
+            <div className="ui search"> 
+            <label for="check" className="style"></label>
             <input 
               type="checkbox" 
               name="check" 
-              value="Remember"
-              checked={this.state.input.check==="Remember"}
-              onChange={this.handleChange}
+            
               className="check"
               id="check" />
-              Remember Me
-              <input className="reset" type="reset" value="Reset"/>
-             <input className="submit" type="submit"  value="Done"/>
-             </div></label>
-            <Router>
-              <div>
-              <Link to ='/'><div className="forgot">Forgot Password</div></Link>
-              </div>
-            </Router>
-           
+              <b>Remember Me</b>
+            
+             <input className="submit" type="submit" value="Done"/>
+             
+            </div>
            
         </form>
         </div>
-       
         </div>
+        </div>
+	
       );
     }
   }
 
-ReactDOM.render(<MyForm />, document.getElementById('root'));
+
 export default MyForm;

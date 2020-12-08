@@ -12,23 +12,24 @@
     font-family: 'Times New Roman', Times, serif;
     margin-left:185px;
 }
-.background
+.lgbackground
 {
-   
-  background-color: black   ;
+  
+  background:url(./huhu.gif) no-repeat scroll 0% 0%;
   background-size: 100% 100%;
   min-width: 100%;
   min-height:100%;
-  background-position: center;
+  background-position: left;
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: fixed;
+ 
+  
 
 }
 
 .reset
-{   
-   
+{
     background-color: rgba(34, 215, 247, 0.911);
     margin-left:68px;
     margin-bottom: 10px;;
@@ -38,55 +39,66 @@
 }
 .submit
 {
-    
     background-color: rgba(34, 215, 247, 0.911);
-    margin-left:20px;
+    margin-left:150px;
     align-content: center;
     
 }
 
 .input
 {
-    border-color: rgba(34, 215, 247, 0.911); ;
+    
     text-align: center;
     color: rgba(34, 215, 247, 0.911);
     background-color: black;
     width:300px;
-    height:30px
-    
-    
+    height:30px;
+    font-size: 15px;
  }
  ::placeholder
  {
      text-align: center;
      color:  rgba(34, 215, 247, 0.911);
      font-family: 'Times New Roman', Times, serif;
-     
+   
  }
 .style
 {   
-   
     font-size: 15px;
     color: rgba(34, 215, 247, 0.911);
     font-family: 'Times New Roman', Times, serif;
 }
 
-.card {
+.ui.card
+{
+    outline: 5px double #0D001A;
+    outline-offset: 12px;
+    display: flex;
+   font-family: 'Times New Roman', Times, serif;
+   top:300px;
+   
+   min-width: 300;
+    border-radius: 10px;
+    
+    padding-bottom: 2px;
+    margin: 10%;
+   height: 1100%;
+   padding-top:10px;
+   width:30%;
+   margin-left: 5%;
+   padding-right: 2px;
+    padding-left: 20px;
+   color: rgba(82, 2, 227, 0.911);
+	background: #CC00AA;
+	background: -moz-linear-gradient(left, #CC00AA 0%, #0D001A 68%, #4D004D 100%);
+	background: -webkit-linear-gradient(left, #CC00AA 0%, #0D001A 68%, #4D004D 100%);
+	background: linear-gradient(to right, #CC00AA 0%, #0D001A 68%, #4D004D 100%);
 
-    position: relative;
-    top:220px;
-    left:30%;
-    text-align: center;
-    min-width: 345;
-    border-radius:10px;
-    padding-top: 30px;
-    padding-right:10px;
-    padding-bottom: 20px;
-    margin: 2%;
-    width:450px;
-    background: -webkit-linear-gradient(to right, #004e92, #000428);
-    background: linear-gradient(to right, #004e92, #000428);
-    box-shadow: 2px 0px 0px 2px rgba(34, 215, 247, 0.911), -2px 0px 0px 2px rgba(48, 162, 255,0.922);
-
-
+   box-shadow: 2px 0px 0px 2px rgba(34, 215, 247, 0.911), -2px 0px 0px 2px rgba(48, 162, 255,0.922);
+   
+} 
+.ui.search
+{
+	font-size: 15px;
+	color: rgba(202, 225, 247, 0.911);
 }

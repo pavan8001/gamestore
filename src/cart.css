@@ -1,0 +1,85 @@
+
+.button
+{
+  margin-left:1080px;
+  margin-top:40px;
+}
+.CButton{
+	border: none;
+	color: yellow;
+	height: 40px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	justify-content: center;
+	width: 75px;
+	text-align: center;
+	text-decoration: underline overline;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Times";
+
+	cursor: pointer;
+	transition-duration: 0.4s;
+	align-self: center;
+	background-color: white;
+	border-radius: 10px;
+	color: rgb(0,36,143);
+	border: 3px solid rgb(255,255,255);
+	box-shadow: 0 6px 6px rgba(0, 255, 255, 0.6);
+}
+.CButton:hover
+{
+	background-color: black;
+	color: rgb(255, 0, 4);
+	border: 3px solid rgb(0,0,0);
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+.cartbackground
+{
+  background:url(./cart.jpg) no-repeat scroll 0% 0%;
+  background-size: 100% 100%;
+  min-width: 100%;
+  min-height:100%;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.cart
+{
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 100px;
+  margin:200px;
+  color:darkred;
+  text-shadow: 0 6px 6px darkgoldenrod;
+
+}
+.details
+{
+
+  margin-left:800px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: navy;
+}
+.table
+{
+  border-radius: 10%;
+  border-color: navy;
+}
+.header1
+{
+  margin-left:500px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color:red;
+}
+.header2
+{
+  margin-left:50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: red;
+}
