@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# GameStore
+## MERN stack Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description:**  A simple MERN stack application for college group project.  
+The project contains:  
+`Homepage`: Link to all categories hosted and ``New Releases`` games.  
+`Preview`: page containing games of repective categories.  
+`Content`: Information for particular game based on request Id.  
+`cart`: Gives an overlook of all games and prices that are put to purchase list.  
+`Registration`, `login` and `Payment` pages respectively.
 
-## Available Scripts
+Static version of this app is running at [gh-pages](https://pavan-n-654.github.io/gamestore).
 
-In the project directory, you can run:
+Authors:  
+>Nishanth S @[Nishanth-S1142001](https://github.com/Nishanth-S1142001)  
+>Pavan N @[pavan-n-654](https://github.com/pavan-n-654)  
+>Prerana Umakant Bandekar @[Prerana-bandekar](https://github.com/Prerana-bandekar)  
+>Rahul RadhaKrishna @[rahul0311](https://github.com/rahul0311)
 
-### `npm start`
+Clone the repo:
+```
+git clone https://github.com/pavan-n-654/gamestore
+```
+or download `zip` file
+```
+cd gamestore
+```
+Install `node modules`
+```
+npm install
+```
+Install `node modules` for `backend`
+```
+cd backend && npm install
+```
+Install and run `mongod` and `mongo` DB services  
+Create database named `users`.
+
+Run `nodemon` server:
+
+``(...gamestore/backend)$`` ``nodemon server``  
+or  
+``(...gamestore/backend)$`` ``node node_modules/nodemon/bin/nodemon.js server``
+
+Run the frontend:  
+``(...gamestore)$`` `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -4,18 +4,18 @@ import "./App.css"
 import axios from 'axios'
 
 
-  
+
 class Register extends React.Component {
     constructor(props) {
     super(props);
-                          
+
     this.changeN=this.changeN.bind(this);
     this.changeA=this.changeA.bind(this);
     this.changep=this.changep.bind(this);
     this.changeE=this.changeE.bind(this);
     this.changeP=this.changeP.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.state = 
+    this.state =
     {
       name:"",
       phone:"",
@@ -23,9 +23,9 @@ class Register extends React.Component {
       Age:"",
       password:"",
       errors:{}
-    };   
+    };
   }
-    
+
   changeN(e)
   {
     this.setState(
@@ -62,17 +62,17 @@ class Register extends React.Component {
       })
   }
 
-  
 
-     
+
+
   handleSubmit(event)
    {                             // updation part
 
     event.preventDefault();
-  
+
       if(this.validate())
       {
-     
+
           const newRegister = {
             name: this.state.name,
             email: this.state.email,
@@ -89,27 +89,27 @@ class Register extends React.Component {
               email:"",
               Age:"",
               password:"",
-             
+
         })
         alert("Registration successful!");
         this.letin();
-      
+
   }
 }
 
   validate()
-  {     
-  
+  {
+
     let name=document.forms["myForm"]["name"].value
     let phone=document.forms["myForm"]["phone"].value
     let email=document.forms["myForm"]["email"].value
     let Age=document.forms["myForm"]["Age"].value
     let password=document.forms["myForm"]["password"].value
- 
-                               
+
+
       let errors = this.state.errors;
       let isValid = true;
-  
+
       if (!name)
        {
         isValid = false;
@@ -134,16 +134,16 @@ class Register extends React.Component {
             errors["Age"]="Your age is not appropraiate to use this website!(Maximum age : 100).";
           }
       }
-    
+
       if (!phone)
        {
         isValid = false;
         errors["phone"] = "Please enter your phone number.";
       }
-  
-      if (typeof phone !== "undefined") 
+
+      if (typeof phone !== "undefined")
       {
-          
+
        if(phone.length !== 10)
         {
           isValid = false;
@@ -156,7 +156,7 @@ class Register extends React.Component {
         isValid = false;
         errors["email"] = "Please enter your email Address.";
       }
-  
+
       if(!password)
       {
         isValid = false;
@@ -171,16 +171,16 @@ class Register extends React.Component {
           isValid = false;
           errors["password"] = "Please use an UpperCase character , number , special character in you password. "
         }
-  
-      } 
+
+      }
       this.setState
       (
         {
         errors: errors
       });
-  
+
       return isValid;
-  
+
 }
 letin()
 {
@@ -189,84 +189,84 @@ letin()
   render() {
     return (
       <div className="rgcontainerregister">
-      
+
           <div className="card1">
             <form name="myForm" onSubmit={this.handleSubmit} method="POST">
-        
-            <div style={{color:"orange",fontSize:30,fontFamily:"Georgia"}}><br/><br/><b style={{fontSize:32,color:"red",border:"red"}}>Lets Start!</b></div>
-  
-            <label for="name"  style={{fontSize:20,color:"yellow"}}><br/></label>
-            <input 
 
-              type="text" 
-              name="name" 
+            <div style={{color:"orange",fontSize:30,fontFamily:"Georgia"}}><br/><br/><b style={{fontSize:32,color:"red",border:"red"}}>Lets Start!</b></div>
+
+            <label for="name"  style={{fontSize:20,color:"yellow"}}><br/></label>
+            <input
+
+              type="text"
+              name="name"
               value={this.state.name}
               onChange={this.changeN}
               className="field"
-              placeholder="Enter name" 
+              placeholder="Enter name"
               id="name" />
-  
+
               <div className=" white">{this.state.errors.name}</div>
-      
-         
-           
+
+
+
             <label for="Age"   style={{fontSize:20,color:"yellow"}}><br/></label>
-            <input 
-              type="number" 
-              name="Age" 
+            <input
+              type="number"
+              name="Age"
               value={this.state.Age}
               onChange={this.changeA}
               className="field"
               style={{width:200 , height:30,backgroundColor:"black",color:"lightwhite"}}
-              placeholder="Enter age" 
+              placeholder="Enter age"
               id="Age" />
-  
+
               <div className=" white">{this.state.errors.Age}</div>
-        
-          
-      
+
+
+
             <label for="Phone"   style={{fontSize:20,color:"yellow"}}><br/></label>
-            <input 
-              type="number" 
-              name="phone" 
+            <input
+              type="number"
+              name="phone"
               value={this.state.phone}
               onChange={this.changep}
-              className="field" 
+              className="field"
               style={{width:200 ,height:30,backgroundColor:"black",color:"lightwhite"}}
 
-              placeholder="Enter phone number" 
+              placeholder="Enter phone number"
               id="phone" />
-  
+
               <div className=" white">{this.state.errors.phone}</div>
-        
-  
-          
+
+
+
             <label for="email"   style={{fontSize:20,color:"yellow"}}><br/></label>
-            <input 
-              type="email" 
-              name="email" 
+            <input
+              type="email"
+              name="email"
               value={this.state.email}
               onChange={this.changeE}
               className="field"
               style={{width:200 ,height:30,backgroundColor:"black",color:"lightwhite"}}
-              placeholder="Enter email" 
+              placeholder="Enter email"
               id="email" />
-  
+
               <div className=" white">{this.state.errors.email}</div>
-         
-       
-    
+
+
+
             <label for="password"   style={{fontSize:20,color:"yellow"}}><br/></label>
-            <input 
-              type="text" 
-              name="password" 
+            <input
+              type="text"
+              name="password"
               value={this.state.password}
               onChange={this.changeP}
               className="field"
-              placeholder="Enter password" 
+              placeholder="Enter password"
               id="password" />
 
-              <div className=" white">{this.state.errors.password}</div> 
+              <div className=" white">{this.state.errors.password}</div>
 
           <br/>
 	   <input  className="rgbutton button1" type="submit" value="Register"/>
@@ -274,13 +274,13 @@ letin()
            <div>
                <br/><br/><a href="./login"><div className="login" > <b><strong style={{fontSize:19,color:"red",border:"black"}}>To login into your existing account</strong></b> <br/><b style={{color:"white"}}>click here</b></div></a>
            </div>
-      
-        </form> 
-    
+
+        </form>
+
      </div>
      </div>
-           
-     
+
+
     );
   }
   }
